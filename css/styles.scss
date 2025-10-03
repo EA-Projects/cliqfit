@@ -329,8 +329,16 @@ nav{
         }
     }
     @media(max-width: 575px){
+        overflow: hidden;
         .bubble-card{
-            margin: 0 20px;
+            gap: 10px;
+            margin: 0 5px;
+            img{
+                max-width: 280px;
+            }
+        }
+        .col-12{
+            padding: 0;
         }
     }
 }
@@ -543,10 +551,11 @@ nav{
     }
     @media(max-width: 575px){
         .inner-card{
+            margin: 20px 5px 0;
             border-radius: 12px;
             padding: 30px 20px;
             p{
-                min-height: auto;
+                min-height: 80px;
             }
         }
         .wrapper-marquee{
@@ -557,6 +566,15 @@ nav{
                         &.large{
                             max-width: 70px;
                         }
+                    }
+                }
+            }
+        }
+        .slide-mobile{
+            &.is-large{
+                .inner-card{
+                    p{
+                        min-height: 60px;
                     }
                 }
             }
@@ -883,6 +901,24 @@ footer{
             }
             p{
                 text-align: center;
+            }
+        }
+    }
+    @media(max-width: 575px){
+        .inner-content{
+            .inner-links{
+                max-width: 300px;
+                margin: 0 auto 20px;
+                a:nth-child(2){
+                    border-right: 0;
+                    padding-right: 0;
+                    margin-right: 0;
+                }
+            }
+            p{
+                a{
+                    display: block;
+                }
             }
         }
     }

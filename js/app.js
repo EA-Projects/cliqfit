@@ -25,6 +25,21 @@ window.addEventListener('load', function() {
             infinite: false,
             dots: true,
         });
+
+        $('.slide-bubbles').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            centerMode: true,
+            centerPadding:'10px',
+            focusOnSelect: false,
+            arrows: false,
+            autoplay: false,
+            pauseOnHover: false,
+            draggable: true,
+            infinite: false,
+            dots: true,
+            variableWidth: true,
+        });
     }
 
     // Animations
